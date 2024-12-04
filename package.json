@@ -1,0 +1,23 @@
+{
+  "name": "lqa-evaluation",
+  "version": "1.0.0",
+  "description": "Create a Playwright-driven test suite that leverages data-driven techniques to minimize code duplication and improve scalability. By driving test scenarios from a JSON object, we can dynamically adapt each test case without repeating code, ensuring a clean and maintainable structure as new cases are added.",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eharm/lqa-evaluation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eharm/lqa-evaluation/issues"
+  },
+  "homepage": "https://github.com/eharm/lqa-evaluation#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "@types/node": "^22.10.1",
+    "typescript": "^5.7.2"
+  }
+}
