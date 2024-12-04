@@ -1,6 +1,6 @@
 export type TestData = {
-    project: 'Web Application' | 'Mobile Application' | 'Marketing Campaign';
+    project: string;
     ticket: string;
-    column: 'To Do' | 'In Progress' | 'Review' | 'Done';
+    column: string;
     tags: string[];
 }
