@@ -7,7 +7,7 @@ const testCases = JSON.parse(fs.readFileSync('./data/project-board-tests.json', 
 for (const tc of testCases) {
     test(`Project: ${tc.project} - Ticket: ${tc.ticket}`, async ({ login, board, page }) => {
         await page.goto('/');
-        await login.login('not-a-user', 'not-a-password');
+        await login.login(process.env.UN as string, process.env.PW as string);
         await board.selectProject(tc.project);
         await expect(page.locator('css=header').getByRole('heading')).toContainText(tc.project);
         const ticket = board.findTicket(tc.column, tc.ticket);
