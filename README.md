@@ -1,5 +1,15 @@
 # lqa-evaluation
 
+## Running the tests
+**NOTE:** before running the tests you will need to create a .env file that contains two variables "UN" and "PW". 
+These are the username and password, repectively, for the test user. Without this informatoin the test will always fail.
+
+To run the tests in UI mode:
+npx playwright test --ui
+
+To run the tests in headless mode:
+npx playwright test
+
 ## Objective
 Create a Playwright-driven test suite that leverages data-driven techniques to minimize code duplication and improve scalability. By driving test scenarios from a JSON object, we can dynamically adapt each test case without repeating code, ensuring a clean and maintainable structure as new cases are added.
 
