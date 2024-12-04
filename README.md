@@ -4,11 +4,20 @@
 **NOTE:** before running the tests you will need to create a .env file that contains two variables "UN" and "PW". 
 These are the username and password, repectively, for the test user. Without this informatoin the test will always fail.
 
+1. Once the repo is cloned:
+`npm ci`
+
+2. Create a `.env` file and add `UN` and `PW` to the file with credentials from the assignment instructions
+
+3. Running the tests:
 To run the tests in UI mode:
-npx playwright test --ui
+`npx playwright test --ui`
 
 To run the tests in headless mode:
-npx playwright test
+`npx playwright test`
+
+4. Reviewing the results:
+`npx playwright show-report`
 
 ## Objective
 Create a Playwright-driven test suite that leverages data-driven techniques to minimize code duplication and improve scalability. By driving test scenarios from a JSON object, we can dynamically adapt each test case without repeating code, ensuring a clean and maintainable structure as new cases are added.
