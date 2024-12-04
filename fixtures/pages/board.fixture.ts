@@ -5,6 +5,7 @@ export class Board {
 
     }
 
+    //#region public methods
     /**
      * Finds a ticket based on the column and name of the ticket
      * @param column the name of the column to search in
@@ -20,10 +21,10 @@ export class Board {
 
     /**
      * Selects the project board to display
-     * @param project name of the projec to select
+     * @param project name of the project to select
      */
     async selectProject(project: string) {
         await this.page.getByRole('button', { name: new RegExp(`^${project}`)}).click();
     }
-
+    //#endregion
 }

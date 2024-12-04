@@ -12,6 +12,11 @@ export class Login {
     //#endregion
 
     //#region methods
+    /**
+     * enters the username and password then clicks 'Sign in'
+     * @param username username to log in with
+     * @param password password to log in with
+     */
     async login(username: string, password: string) {
         await this.username.fill(username);
         await this.password.fill(password);
