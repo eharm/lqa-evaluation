@@ -15,6 +15,7 @@ for (const tc of testCases) {
         // Verify count of labels
         const labels = ticket.locator('css=.rounded-full');
         await expect(labels).toHaveCount(tc.tags.length);
+        // Verify label content
         for (const tag of tc.tags) {
             await expect(labels.filter({ hasText: tag })).toBeVisible();
         }
